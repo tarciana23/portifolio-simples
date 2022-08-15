@@ -1,0 +1,114 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        color: #EEE9E9;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    ul {
+        list-style: none;
+        font-style: italic;
+        font-weight: 700;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    body {
+        background: url(./fundo.jpg) no-repeat center center fixed;
+        background: cover;
+    }
+    
+    .name {
+        margin: 5%;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+        /*border-bottom: 2px solid #DCDCDC;*/
+        /*box-shadow: 1px 1px 10px #DCDCDC;*/
+        border-bottom: 15px ridge#DCDCDC;
+        margin-bottom: 45px;
+    }
+    
+    header ul {
+        display: flex;
+    }
+    
+    header ul li {
+        padding: 10px;
+        border-bottom: 2px dashed #DCDCDC
+    }
+    
+    header ul li {
+        transition: 800ms;
+    }
+    
+    header ul li a:hover {
+        color: #DCDCDC;
+        text-decoration: underline;
+    }
+    
+    .container {
+        text-align: center;
+    }
+    
+    .container .name h1 {
+        font-size: 60px;
+    }
+    
+    .container .name h5 {
+        font-size: 20px;
+    }
+    
+    #arrow {
+        font-size: 35px;
+        cursor: pointer;
+        animation: blink 1s steps(5, start) infinite;
+    }
+    
+    @keyframes blink {
+        to {
+            visibility: hidden;
+        }
+    }
+    
+    #about p {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .form {
+        width: 40%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    
+    .form input {
+        width: 50%;
+        margin: 5%;
+        border: thick double black;
+        padding: 5px 10px;
+    }
+    
+    .form button {
+        color: rgb(31, 3, 3);
+        padding: 5px 10px;
+        background: linear-gradient(to right, #4F4F4F 50%, #DCDCDC 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        transition: all 800ms ease-out;
+    }
+    
+    .form button:hover {
+        background: left bottom;
+        color: white;
+    }
